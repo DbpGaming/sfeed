@@ -1,5 +1,7 @@
 #!/bin/sh
 
-url=$(sfeed_plain "$HOME/.sfeed/feeds/"* | sort -r | dmenu -c -l 10 | \
+ISGUI=1
+
+FILE=$(sfeed_plain "$HOME/.sfeed/feeds/"* | sort -r | dmenu -c -l 10 | \
 	sed -n 's@^.* \([a-zA-Z]*://\)\(.*\)$@\1\2@p')
-sopen "${url}"
+. sopen
