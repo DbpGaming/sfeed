@@ -2,6 +2,9 @@
 # update feeds, merge with old feeds.
 # NOTE: assumes "sfeed_*" executables are in $PATH.
 
+#sets path so it can be used in cronjobs
+PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin"
+
 # defaults
 sfeedpath="$HOME/.sfeed/feeds"
 
