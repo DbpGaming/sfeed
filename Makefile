@@ -33,6 +33,7 @@ BIN = \
 	sfeed_xmlenc
 SCRIPTS = \
 	sfeed_opml_export\
+	sfeed_menu\
 	sfeed_update
 
 SRC = ${BIN:=.c}

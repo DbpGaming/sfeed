@@ -1,0 +1,5 @@
+#!/bin/sh
+
+url=$(sfeed_plain "$HOME/.sfeed/feeds/"* | dmenu -c -l 10 | \
+	sed -n 's@^.* \([a-zA-Z]*://\)\(.*\)$@\1\2@p')
+sopen "${url}"
