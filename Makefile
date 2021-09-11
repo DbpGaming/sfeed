@@ -34,6 +34,7 @@ BIN = \
 SCRIPTS = \
 	sfeed_opml_export\
 	sfeed_menu\
+	sfeed_menu_pick\
 	sfeed_update
 
 SRC = ${BIN:=.c}
